@@ -1,3 +1,12 @@
-<ng-container *ngFor="let item of [6, 9, 8, 4]; index as i;">
-    <h1>agrar {{ value + item }} lalala {{ i }}</h1>
+<button (click)="switchIf($event)">Switch if</button>
+
+<ng-container *ngIf="showIf; else template">
+  <h3>This is inside a ng-container</h3>
 </ng-container>
+
+<ng-template #template>
+  <h3>This is inside a ng-template</h3>
+  <ng-container *ngFor="let item of [6, 9, 8, 4]; index as i;">
+    <h1>agrar {{ value + item }} lalala {{ i }}</h1>
+  </ng-container>
+</ng-template>
