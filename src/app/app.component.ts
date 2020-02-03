@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'agrar';
+  public switchedName: string = '';
+  public showName( name: string ): void {
+    this.switchedName = name;
+  }
 }

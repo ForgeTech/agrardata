@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-agrar',
@@ -12,6 +12,8 @@ export class AgrarComponent implements OnInit {
   public birthday = new Date(1988, 3, 15); // April 15, 1988
   @Input() public config: number[] = [ 1, 2, 3 ];
   @Input() public name: string = 'world';
+  /** Contains a EventEmitter instance and uses it to publish a components events to their parent-component */
+  @Output() switched: EventEmitter<string> = new EventEmitter<string>();
 
   // Class Constructor
   constructor() {
@@ -25,6 +27,7 @@ export class AgrarComponent implements OnInit {
   public switchIf( event: Event): void {
     event.preventDefault();
     this.showIf = !this.showIf;
+    this.switched.emit( this.name );
   }
 
 }
