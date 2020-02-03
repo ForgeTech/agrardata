@@ -9,9 +9,12 @@ export class AgrarComponent implements OnInit {
 
   public value: number = 10;
 
-  constructor() { }
+  constructor() {
+    console.log('CONSTRUCTOR');
+  }
 
   ngOnInit() {
+    console.log('NG INIT');
   }
 
 }
