@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgrarComponent implements OnInit {
 
-  public value: string = 'test';
+  public value: number = 10;
 
   constructor() { }
 
