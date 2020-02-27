@@ -1,3 +1,7 @@
-<p>exercise1 works!</p>
-<app-app-stefan (toggle)="showName($event)"></app-app-stefan>
-<app-app-josef (toggle)="josef( $event )"></app-app-josef>
+<h1>Exercise 1</h1>
+<h2>Component Input property name ohne []</h2>
+<app-app-stefan name="'Stefan' + 1'" (toggle)="showName($event)"></app-app-stefan>
+<h2>Component Input property ohne [] aber mit template expression</h2>
+<app-app-stefan name="{{'Stefan' + 1 }}" (toggle)="showName($event)"></app-app-stefan>
+<h2>Comonent</h2>
+<app-app-josef [name]="'Josef'" (toggle)="josef( $event )"></app-app-josef>

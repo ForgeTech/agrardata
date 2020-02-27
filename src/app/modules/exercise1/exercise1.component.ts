@@ -5,45 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './exercise1.component.html',
   styleUrls: ['./exercise1.component.scss']
 })
-export class Exercise1Component implements OnInit {
-
-  private janein: string;
-  public switchedToggled: boolean = false;
+export class Exercise1Component {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log('OnInit');
-  }
-
-  /*
-  public stefanEX1( event: Event): void {
-
-    event.preventDefault();
-    console.log('test stefanEX1');
+  public showName( event: { toggled: boolean } ): void {
+    if ( event.toggled ) {
+      console.log( 'Stefan: ', 'ja' );
+    } else {
+      console.log( 'Stefan: ', 'nein' );
+    }
 
   }
 
-  public showToggled( event: Event ): void {
-    event.preventDefault();
-    console.log('showToggleEX1');
-  }
-*/
-
-  public showName( name: string ): void {
-    console.log('showToggleEX1');
-    console.log(name);
-
-    let n: number;
-    n = name.indexOf('false');
-    console.log(n);
-    this.janein = 'nein';
-    console.log(this.janein);
-
-  }
-
-  public josef(toggle: { toggled: boolean }): void {
-    this.switchedToggled = toggle.toggled;
-    console.log('josef: ' + this.switchedToggled);
+  public josef( toggled: boolean ): void {
+    const templateString = `Josef:
+      Toggled ${ toggled }
+    `;
+    console.log(templateString);
   }
 }

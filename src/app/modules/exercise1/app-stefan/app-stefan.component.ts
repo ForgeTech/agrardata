@@ -15,14 +15,14 @@ export class AppStefanComponent implements OnInit, OnChanges, OnDestroy {
   constructor() { }
 
   ngOnInit() {
-    console.log('OnInit');
+    console.log('Stefan OnInit');
   }
 
   ngOnChanges() {
-    console.log('OnChanges');
+    console.log('Stefan OnChanges');
   }
   ngOnDestroy() {
-    console.log('OnDestroy');
+    console.log('Stefan OnDestroy');
   }
 
   public stefan( event: Event): void {

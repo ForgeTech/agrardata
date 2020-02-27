@@ -9,7 +9,7 @@ export class AppJosefComponent implements OnInit, OnChanges, OnDestroy {
 
   public isToggled: boolean = false;
   @Input() public name: string = 'Nicht vergeben!!!';
-  @Output() toggle: EventEmitter<{ toggled: boolean }> = new EventEmitter<{ toggled: boolean }>();
+  @Output() toggle: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor() { }
 
@@ -28,7 +28,7 @@ export class AppJosefComponent implements OnInit, OnChanges, OnDestroy {
   public toggleIf(event: Event): void {
     event.preventDefault();
     this.isToggled = !this.isToggled;
-    this.toggle.emit({ toggled: this.isToggled });
+    this.toggle.emit(this.isToggled);
     console.log('toggleIf: ' + this.isToggled);
   }
 }
