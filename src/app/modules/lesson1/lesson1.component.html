@@ -1,4 +1,4 @@
-<h1>Last switched: {{ switchedName }}</h1>
+<h1>Last switched: {{ switchedName.name }} {{ switchedName.status }}</h1>
 <app-agrar (switched)="showName( $event )" name="Josef"></app-agrar>
 <app-agrar (switched)="showName( $event )" [name]="'Michael'"[config]="[ 4 ]">
   <h3>WHUPPI</h3>
@@ -7,4 +7,8 @@
   <h3 second>WHUPPTI WUHPTU DOO 2</h3>
   <h3 third>WHUPPTI WUHPTU DOO 3</h3>
 </app-agrar>
-<app-agrar (switched)="showName( $event )" [name]="'Stefan'"></app-agrar>
+<app-agrar
+  (switched)="showName( $event )"
+  [name]="'Stefan'"
+  [config]="[1,5]"
+></app-agrar>

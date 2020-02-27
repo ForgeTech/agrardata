@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class Exercise1Component implements OnInit {
 
   private janein: string;
+  public switchedToggled: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+    console.log('OnInit');
   }
 
   /*
@@ -40,4 +42,8 @@ export class Exercise1Component implements OnInit {
 
   }
 
+  public josef(toggle: { toggled: boolean }): void {
+    this.switchedToggled = toggle.toggled;
+    console.log('josef: ' + this.switchedToggled);
+  }
 }

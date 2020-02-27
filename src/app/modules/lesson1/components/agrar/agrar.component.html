@@ -5,14 +5,14 @@
 
 <ng-container *ngIf="showIf; else template">
   <h3>This is inside a ng-container</h3>
-  <h4>hello, {{ name }}</h4>
+  <h4>name: {{ name }}</h4>
 </ng-container>
 <ng-content select="[second]"></ng-content>
 
 <ng-template #template>
   <h3>This is inside a ng-template</h3>
   <ng-container *ngFor="let item of config; index as i;">
-    <h1>agrar {{ value + item }} lalala {{ i }}</h1>
+    <h1>config-values: {{ item }} ngforIndex {{ i }}</h1>
   </ng-container>
 </ng-template>
 
