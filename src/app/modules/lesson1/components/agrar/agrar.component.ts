@@ -1,11 +1,13 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, Output, EventEmitter, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-agrar',
   templateUrl: './agrar.component.html',
+  //template: '<h1>STE</h1>',
+  //styles: ['h1{color:red}']
   styleUrls: ['./agrar.component.scss']
 })
-export class AgrarComponent implements OnInit {
+export class AgrarComponent implements OnInit, OnChanges {
   // Class-Member variables
   public value: number = 10;
   public showIf: boolean = true;
@@ -23,6 +25,8 @@ export class AgrarComponent implements OnInit {
   ngOnInit() {
     console.log('NG INIT');
   }
+
+  ngOnChanges(changes: SimpleChanges){console.log('ON_CHANGES')};
   // Class-Memeber Methode
   public switchIf( event: Event): void {
     event.preventDefault();
