@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedServiceService } from '../../service/shared-service.service';
 
 @Component({
   selector: 'app-test2',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Test2Component implements OnInit {
 
-  constructor() { }
+  constructor(
+    public sharedService: SharedServiceService
+  ) {}
 
   ngOnInit() {
+    this.sharedService.test('test 2');
   }
 
 }

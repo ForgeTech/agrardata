@@ -4,6 +4,8 @@ import { Test1Component } from './components/test1/test1.component';
 import { Test2Component } from './components/test2/test2.component';
 import { Lesson2Component } from './components/lesson2/lesson2.component';
 import { Lesson2RoutingModule } from './lesson2-routing.module';
+import { SharedServiceService } from './service/shared-service.service';
+import { SharedService2Service } from './service/shared-service2.service';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,9 @@ import { Lesson2RoutingModule } from './lesson2-routing.module';
   imports: [
     CommonModule,
     Lesson2RoutingModule,
-  ]
+  ],
+  providers: [
+    { provide: SharedServiceService, useClass: SharedService2Service }
+  ],
 })
 export class Lesson2Module { }
