@@ -16,6 +16,10 @@ const routes: Routes = [{
     loadChildren: () => import('./modules/lesson1/lesson1.module').then(m => m.Lesson1Module)
   },
   {
+    path: 'lesson2',
+    loadChildren: () => import('./modules/lesson2/lesson2.module').then(m => m.Lesson2Module)
+  },
+  {
     path: '**',
     redirectTo: 'exercise1'
   }
