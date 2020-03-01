@@ -7,9 +7,14 @@ import {
 } from '@angular/router';
 
 
-const routes: Routes = [{
+const routes: Routes = [
+  {
     path: 'exercise1',
     loadChildren: () => import('./modules/exercise1/exercise1.module').then(m => m.Exercise1Module)
+  },
+  {
+    path: 'exercise2/florian',
+    loadChildren: () => import('./modules/exercise2/florian/florian.module').then(m => m.FlorianModule)
   },
   {
     path: 'lesson1',
