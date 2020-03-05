@@ -37,11 +37,12 @@ const routes: Routes = [
     path: 'lesson2',
     loadChildren: () => import('./modules/lesson2/lesson2.module').then(m => m.Lesson2Module)
   },
+  { path: 'lesson3', loadChildren: () => import('./modules/lesson3/lesson3.module').then(m => m.Lesson3Module) },
   {
     path: '**',
     pathMatch: 'prefix',
     redirectTo: 'exercise2/josef'
-  }
+  },
 
 ];
 
