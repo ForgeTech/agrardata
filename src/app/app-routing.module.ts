@@ -9,6 +9,10 @@ import {
 
 const routes: Routes = [
   {
+    path: 'exercise2/stefan',
+    loadChildren: () => import('./modules/exercise2/stefan/stefan.module').then(m => m.StefanModule)
+  },
+  {
     path: 'exercise1',
     loadChildren: () => import('./modules/exercise1/exercise1.module').then(m => m.Exercise1Module)
   },
