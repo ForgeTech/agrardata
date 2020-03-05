@@ -1,7 +1,17 @@
 <mat-toolbar color="primary">
   <span>Header</span>
+  <button mat-fab color="warn" (click)="drawer.toggle();">
+    <mat-icon>menu</mat-icon>
+  </button>
 </mat-toolbar>
-  <router-outlet></router-outlet>
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side">
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
 <mat-toolbar color="accent">
   <span>Footer</span>
 </mat-toolbar>
