@@ -9,6 +9,11 @@ import {
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'prefix',
+    redirectTo: 'exercise2/stefan'
+  },
+  {
     path: 'exercise2/stefan',
     loadChildren: () => import('./modules/exercise2/stefan/stefan.module').then(m => m.StefanModule)
   },
@@ -34,7 +39,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'exercise2'
+    pathMatch: 'prefix',
+    redirectTo: 'exercise2/josef'
   }
 
 ];
