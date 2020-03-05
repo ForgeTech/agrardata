@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/exercise2/florian/florian.module').then(m => m.FlorianModule)
   },
   {
+    path: 'exercise2/josef',
+    loadChildren: () => import('./modules/exercise2/josef/josef.module').then(m => m.JosefModule)
+  },
+  {
     path: 'lesson1',
     loadChildren: () => import('./modules/lesson1/lesson1.module').then(m => m.Lesson1Module)
   },
@@ -30,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'exercise1'
+    redirectTo: 'exercise2'
   }
 
 ];
