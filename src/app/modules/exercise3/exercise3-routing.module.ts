@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FlorianComponent } from './components/florian/florian.component';
 
-const routes: Routes = [{ path: '', component: FlorianComponent }];
+const routes: Routes = [
+  { path: '', component: FlorianComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

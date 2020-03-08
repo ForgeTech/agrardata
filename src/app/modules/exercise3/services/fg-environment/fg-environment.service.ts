@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { EnvironmentConfigInterface } from 'src/app/interfaces/interface.export';
 import { environment } from '../../../../../environments/environment';
+import { EnvironmentConfigInterface } from '../../interfaces/environment.config.interface';
 /**
  * Create base Interface and Class to allow to inject angular-environment variables as
  * service for usage in application and to allow override during unit/e2e-testing
