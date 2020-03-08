@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { NGXLogger as FgLogService } from 'ngx-logger';
 import { Subject, Observable } from 'rxjs';
-import { FgEvent } from 'src/app/class/fg-event.class';
+import { FgEvent } from '../../class/fg-event.class';
+
 /**
  * FgEventService -
  * Service provides an interface to handle and distribute
