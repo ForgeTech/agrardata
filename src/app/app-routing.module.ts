@@ -29,6 +29,8 @@ const routes: Routes = [
     path: 'exercise2/josef',
     loadChildren: () => import('./modules/exercise2/josef/josef.module').then(m => m.JosefModule)
   },
+  { path: 'exercise3',
+    loadChildren: () => import('./modules/exercise3/exercise3.module').then(m => m.Exercise3Module) },
   {
     path: 'lesson1',
     loadChildren: () => import('./modules/lesson1/lesson1.module').then(m => m.Lesson1Module)
