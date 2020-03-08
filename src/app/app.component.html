@@ -1,17 +1,19 @@
-<mat-toolbar color="primary">
-  <span>Header</span>
-  <button mat-fab color="warn" (click)="drawer.toggle();">
-    <mat-icon>menu</mat-icon>
-  </button>
-</mat-toolbar>
-<mat-drawer-container>
-  <mat-drawer #drawer mode="side">
-    <app-sidenav></app-sidenav>
-  </mat-drawer>
-  <mat-drawer-content>
-    <router-outlet></router-outlet>
-  </mat-drawer-content>
-</mat-drawer-container>
-<mat-toolbar color="accent">
-  <span>Footer</span>
-</mat-toolbar>
+<div class="flex-container">
+  <mat-toolbar class="header" color="primary">
+    <span>Header</span>
+    <button class="navigation-toogle" mat-mini-fab color="warn" (click)="drawer.toggle();">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-drawer-container class="content">
+    <mat-drawer #drawer mode="side">
+      <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  <mat-toolbar class="footer" color="accent">
+    <span>Footer</span>
+  </mat-toolbar>
+</div>
