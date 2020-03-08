@@ -10,6 +10,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,10 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    LoggerModule.forRoot( {
+      level: NgxLoggerLevel.LOG
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
