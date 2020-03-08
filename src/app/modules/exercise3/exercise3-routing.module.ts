@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FlorianComponent } from './components/florian/florian.component';
 
-import { Exercise3Component } from './exercise3.component';
-
-const routes: Routes = [{ path: '', component: Exercise3Component }];
+const routes: Routes = [{ path: '', component: FlorianComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
