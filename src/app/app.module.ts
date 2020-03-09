@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
+import { HttpClientModule } from '@angular/common/http';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
@@ -26,6 +29,7 @@ import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
     MatListModule,
     MatButtonModule,
     MatIconModule,
+    MatExpansionModule,
     LoggerModule.forRoot( {
       level: NgxLoggerLevel.LOG
     })
