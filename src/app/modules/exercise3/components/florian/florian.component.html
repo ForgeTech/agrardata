@@ -1,1 +1,27 @@
-<p>florian works!</p>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <!-- Header Content (Start) -->
+    <mat-panel-title>
+      <ng-container *ngIf="head; else headContent">
+        {{ head }}
+      </ng-container>
+      <ng-template #headContent>
+        <ng-content select="[head]"></ng-content>
+      </ng-template>
+    </mat-panel-title>
+    <!-- Header Content (Start) -->
+    <!-- Description Content (Start) -->
+    <mat-panel-description>
+      <ng-container *ngIf="desc; else descContent">
+        {{ desc }}
+      </ng-container>
+      <ng-template #descContent>
+        <ng-content select="[desc]"></ng-content>
+      </ng-template>
+    </mat-panel-description>
+    <!-- Description Content (End) -->
+  </mat-expansion-panel-header>
+  <!-- Main Content (Start) -->
+  <ng-content></ng-content>
+  <!-- Main Content (End) -->
+</mat-expansion-panel>
