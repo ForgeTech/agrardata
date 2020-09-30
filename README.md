@@ -4,14 +4,14 @@ Repository for AgrarData Training
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 
 ## ANGULAR LINKS
-ANGULAR: https://angular.io/docs
-MATERIAL: https://material.angular.io/
-RXJS: https://www.learnrxjs.io/
-TYPESCRIPT: https://www.typescriptlang.org/
-
-ANGULAR-CLI: https://cli.angular.io/
-NODEJS: https://nodejs.org/en/
-GIT: https://guides.github.com/introduction/git-handbook/
+* ANGULAR: https://angular.io/docs
+* MATERIAL: https://material.angular.io/
+* RXJS: https://www.learnrxjs.io/
+* TYPESCRIPT: https://www.typescriptlang.org/
+--------------------------
+* ANGULAR-CLI: https://cli.angular.io/
+* NODEJS: https://nodejs.org/en/
+* GIT: https://guides.github.com/introduction/git-handbook/
 
 
 ## Development server
