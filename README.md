@@ -8,7 +8,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * MATERIAL: https://material.angular.io/
 * RXJS: https://www.learnrxjs.io/
 * TYPESCRIPT: https://www.typescriptlang.org/
---------------------------
 * ANGULAR-CLI: https://cli.angular.io/
 * NODEJS: https://nodejs.org/en/
 * GIT: https://guides.github.com/introduction/git-handbook/
