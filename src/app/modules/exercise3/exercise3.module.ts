@@ -7,7 +7,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
-  declarations: [FlorianComponent, Exercise3Component],
+  declarations: [
+    FlorianComponent,
+    Exercise3Component],
   imports: [
     CommonModule,
     Exercise3RoutingModule,

@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { StefanRoutingModule } from './stefan-routing.module';
 import { EntryComponent } from './components/entry/entry.component';
 import { HelloService } from './services/hello.service';
-import { SerwasService } from './services/serwas.service';
 
 
 @NgModule({
@@ -12,7 +11,6 @@ import { SerwasService } from './services/serwas.service';
   imports: [
     CommonModule,
     StefanRoutingModule
-  ],
-  providers: [ { provide: HelloService, useClass: SerwasService } ]
+  ]
   })
 export class StefanModule { }

@@ -4,7 +4,7 @@ import { Greeter } from '../../interfaces/greeter';
 @Injectable({
   providedIn: 'root'
 })
-export class HelloService implements Greeter {
+export class HelloService {
 
   constructor() { }
 
