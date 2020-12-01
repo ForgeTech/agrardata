@@ -1,1 +1,15 @@
-<p>lesson4 works!</p>
+<p>Observable$: {{ observable$ | async }}</p>
+<p>map$: {{  map$ | async }}</p>
+
+<hr>
+
+<h3 (click)="handleSub($Event)">Subscribe</h3>
+<h3 (click)="handleUnsub($Event)">Unsubscribe</h3>
+<p>Interval$: {{ interval$ | async }}</p>
+<p>interval2$: {{ interval2$ | async }}</p>
+
+<hr>
+
+<h3 (click)="handleClick($Event)">Button</h3>
+<p>clicked: {{ clicked }}</p>
+<p>clicked$: {{ clicked$ | async }}</p>
