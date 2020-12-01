@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'prefix',
-    redirectTo: 'exercise2/stefan'
+    redirectTo: 'lesson4/'
   },
   {
     path: 'exercise2/stefan',
@@ -40,7 +40,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/lesson2/lesson2.module').then(m => m.Lesson2Module)
   },
   { path: 'lesson3',
-    loadChildren: () => import('./modules/lesson3/lesson3.module').then(m => m.Lesson3Module) },
+    loadChildren: () => import('./modules/lesson3/lesson3.module').then(m => m.Lesson3Module)
+  },
+  { path: 'lesson4',
+    loadChildren: () => import('./modules/lesson4/lesson4.module').then(m => m.Lesson4Module)
+  },
   {
     path: '**',
     pathMatch: 'prefix',
