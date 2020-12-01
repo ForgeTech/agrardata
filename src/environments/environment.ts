@@ -10,7 +10,7 @@ export const environment: EnvironmentConfigInterface = {
    * like: '2min 10s' Gets parsed using
    * https://www.npmjs.com/package/timestring
    */
-  refreshRate: '15s',
+  refreshRate: '1s',
   /** Property containing the name of the environment */
   name: 'Production Environment',
   /** This is an optimized production build */

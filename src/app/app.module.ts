@@ -31,7 +31,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatExpansionModule,
     LoggerModule.forRoot( {
-      level: NgxLoggerLevel.LOG
+      level: NgxLoggerLevel.INFO
     })
   ],
   providers: [],

@@ -5,7 +5,7 @@ import { FgEvent } from '../../class/fg-event.class';
 @Component({
   selector: 'app-florian',
   templateUrl: './florian.component.html',
-  styleUrls: ['./florian.component.scss']
+  styleUrls: ['./florian.component.scss'],
 })
 export class FlorianComponent implements OnChanges {
   @Input( 'head' ) public head: string = "";

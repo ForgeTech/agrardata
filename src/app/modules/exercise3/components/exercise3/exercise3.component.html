@@ -1,11 +1,10 @@
 <h1>Exercise 3 - Overview</h1>
-<app-florian [head]="'FROM-INPUT'" [desc]="" (changes)="handleAppFlorian( $event )">
-  <!-- <ng-container head>Headline: Florian</ng-container> -->
-  <ng-container desc>PROJECTED</ng-container>
-  Projected Content from Florian-Component
+<app-florian [head]="" [desc]="" (changes)="handleAppFlorian( $event )">
+  <ng-container head>HEADER-PROJECTED</ng-container>
+  <ng-container desc>DESCRIPTION-PROJECTED</ng-container>
+  CONTENT-PROJECTED
 </app-florian>
-<app-florian (changes)="handleAppFlorian( $event )">
-  <ng-container head>Florian - Content Projection</ng-container>
-  <ng-container desc>Description: Florian 666</ng-container>
-  Projected Content from Florian-Component
+<app-florian [head]="headValue" [desc]="descValue" (changes)="handleAppFlorian( $event )">
+  CONTENT-PROJECTED
 </app-florian>
+
